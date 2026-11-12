@@ -1,0 +1,29 @@
+CAMPUS COMPASS — BACKEND STATUS
+
+The dedicated Supabase project has already been created and connected by ChatGPT.
+Project region: Asia-Pacific (Mumbai)
+Project URL: https://abjuhopwjlvrztspmqql.supabase.co
+
+Database migrations already applied:
+- Core placement schema: student profiles/records, companies, office locations, eligibility, jobs, applications, offers, interview experiences, interview questions, roadmaps, roadmap progress, skills, favorites, notifications, calendar events and audit logs.
+- Row Level Security policies for private student records, staff operations and shared content.
+- Compatibility tables used by this website's current V6 interface for private roadmap/profile data and shared company/community content.
+- New-user profile bootstrap.
+
+No SQL or terminal commands need to be run by the user.
+
+SECURITY NOTES
+- The website contains only the Supabase publishable key. It is designed for browser use.
+- Never add a service_role key to config.js or any browser file.
+- Student private data is restricted to its owner and authorized staff by Row Level Security.
+- Public company and community records are shared. The current V6 interface does not yet implement the complete moderation workflow or every admin/student module described in the larger product specification.
+- The core database schema is prepared for phased implementation of those modules.
+
+AUTHENTICATION
+- Email/password registration and login use Supabase Auth.
+- If email confirmation is enabled in Supabase Auth, users must verify their email before signing in.
+- Configure the deployed website's URL and redirect URLs in Supabase Auth settings before production launch.
+- Admin access is not granted automatically to signups. Admin roles must be assigned through a trusted administrator process; never let users self-select an admin role.
+
+DEPLOYMENT
+Upload the website files to an HTTPS static host (for example GitHub Pages). The backend is cloud-hosted; localStorage is only used for interface caching, not as the private cross-device database.

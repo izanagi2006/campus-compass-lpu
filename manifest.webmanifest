@@ -1,0 +1,12 @@
+{
+  "name": "Campus Compass — LPU Career Intelligence",
+  "short_name": "Campus Compass",
+  "description": "LPU placement intelligence, student interview experiences and career preparation.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2eee5",
+  "theme_color": "#142a25",
+  "orientation": "any",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
